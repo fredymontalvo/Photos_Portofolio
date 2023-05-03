@@ -109,6 +109,7 @@ header label {
     background: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     display: none;
+    height: 75vh;
   }
 
   header .nav-bar ul li {
@@ -130,6 +131,9 @@ header label {
   header .nav-bar ul li:hover::after {
     width: 100%;
     transition: 0.5s ease-out;
+  }
+  .background_foto{
+    display: none;
   }
 }
 
