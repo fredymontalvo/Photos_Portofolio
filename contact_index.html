@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/contact_style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <img class= "logo_web" src="./src/imgs/LogoSample_ByTailorBrands.jpg" alt="logo" />
+        <input type="checkbox" name="" id="menu-bar" />
+        <label for="menu-bar">Menu</label>
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a href="#">Gallery +</a>
+              <ul>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Landscapes</a></li>
+                <li><a href="#">Berlin</a></li>
+                <li><a href="#">More</a></li>
+              </ul>
+            </li>
+            <li><a href="./about_index.html">About me</a></li>
+            <li><a href="./contact_index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="formular_contact">
+        <img class="Profile-bild"  src="./src/imgs/background.jpeg" alt="Bild_Fredy_Kamera">
+        <div class="about_me-container">
+            <h2>Contact me</h2>
+            <form action="enviar.php" method="POST">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            
+              <label for="asunto">Asunto:</label>
+              <input type="text" id="asunto" name="asunto" required>
+            
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            
+              <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </section>
+        
+      </section>
+</body>
+</html>
