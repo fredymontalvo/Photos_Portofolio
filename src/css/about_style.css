@@ -145,10 +145,11 @@ header label {
 .about_me-container {
   width: 600px;
   height: 600px;
-  margin-top: 11em;
+  margin-top: 10.6em;
   border-radius: 20px;
   padding: 1em;
   background-color:rgba(255, 255, 255, .4) ;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about_me-container h2 {
@@ -167,7 +168,7 @@ header label {
   margin-left: 2%;
   border-radius: 0.9rem;
   border: 20px solid rgba(255, 255, 255, .4);
-  
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 768px) {
