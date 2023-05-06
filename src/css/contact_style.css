@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  background-color: whitesmoke;
+  background-color: #f6e1c3;
 }
 
 header {
@@ -24,6 +24,7 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  font-family: "Domine", serif;
 }
 
 header .nav-bar ul {
@@ -113,6 +114,7 @@ header label {
 
   header .nav-bar ul li {
     width: 100%;
+    left: 12px;
   }
   header .nav-bar ul li ul {
     position: relative;
@@ -131,45 +133,30 @@ header label {
     width: 100%;
     transition: 0.5s ease-out;
   }
-  
 }
 
-#formular_contact{
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
-}
-
-.about_me-container {
-  width: 600px;
-  height: 600px;
+.Contact_me-container {
+  width: 500px;
+  height: 500px;
   margin-top: 10.6em;
   border-radius: 20px;
   padding: 1em;
-  background-color:rgba(255, 255, 255, .4) ;
+  background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.about_me-container h2 {
+.Contact_me-container h2 {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
 }
-.about_me-container p {
-  text-align: justify;
-  line-height: 155%;
-  font-family: "Roboto", sans-serif;
-}
 
 .Profile-bild {
-  height: 600px;
+  height: 500px;
   margin-top: 10%;
   margin-left: 2%;
   border-radius: 0.9rem;
-  /* border: 20px solid rgba(255, 255, 255, .4); */
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  filter: brightness(90%);
 }
 
 @media screen and (max-width: 768px) {
@@ -180,13 +167,20 @@ header label {
     height: auto;
   }
 
-  .about_me-container {
+  .Contact_me-container {
     width: 400px;
     height: auto;
     position: relative;
     margin-top: 150px;
   }
-  
+}
+#formular_contact {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 form {
@@ -194,11 +188,11 @@ form {
   flex-direction: column;
   max-width: 500px;
   margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 label {
   margin-top: 10px;
-  font-weight: bold;
 }
 
 input,
@@ -207,18 +201,30 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
 }
 
 button[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #e9a178;
+  color: black;
   padding: 10px 15px;
   border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  width: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #a84448;
+  
+}
+
+p {
+  margin-left: 70%;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: end;
+  font-family: "Roboto", sans-serif;
 }

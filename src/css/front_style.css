@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  background-color: whitesmoke;
+  background-color: #F6E1C3;
 }
 
 header {
@@ -24,6 +24,7 @@ header {
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
+  font-family: 'Domine', serif;
 }
 
 header .nav-bar ul {
@@ -114,6 +115,7 @@ header label {
 
   header .nav-bar ul li {
     width: 100%;
+    left: 12px;
   }
   header .nav-bar ul li ul {
     position: relative;
@@ -132,7 +134,7 @@ header label {
     width: 100%;
     transition: 0.5s ease-out;
   }
-  .background_foto{
+  .background_foto {
     display: none;
   }
 }
@@ -159,7 +161,14 @@ footer {
 
 .fa-solid {
   color: rgb(164, 106, 229);
+  display: flex;
+  justify-content:space-evenly;
+  margin-top: 10%;
 }
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
 .share-buttom {
   width: 130px;
   height: 40px;
@@ -172,6 +181,7 @@ footer {
   position: relative;
   cursor: pointer;
   transition: 0.3s linear;
+ 
 }
 
 .share-buttom:hover {
