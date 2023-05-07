@@ -1,141 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  body {
-    width: 100vw;
-    background-color:whitesmoke;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 16px;
+  background-color: whitesmoke;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(255, 255, 255);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  font-family: "Domine", serif;
+}
+
+header .nav-bar ul {
+  list-style: none;
+}
+
+header .nav-bar ul li {
+  position: relative;
+  float: left;
+}
+
+header .nav-bar ul li a {
+  font-size: 20px;
+  color: black;
+  padding: 20px;
+  display: block;
+  position: relative;
+  padding: 3px;
+  margin: 5px;
+}
+
+.logo_web {
+  width: 150px;
+  height: auto;
+}
+
+header .nav-bar ul li::after {
+  content: "";
+  height: 2px;
+  width: 0;
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+header .nav-bar ul li:hover::after {
+  width: 100%;
+  transition: 0.5s ease-out;
+}
+
+header .nav-bar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  background: #fff;
+  display: none;
+}
+
+header .nav-bar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .nav-bar ul li:focus-within > ul,
+header .nav-bar ul li:hover > ul {
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
   header {
-    position: fixed;
-    top: 0;
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .nav-bar {
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    position: fixed;
-    background-color: rgba(255, 255, 255);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 0px 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    font-family: 'Domine', serif;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
   }
-  
-  header .nav-bar ul {
-    list-style: none;
-  }
-  
+
   header .nav-bar ul li {
-    position: relative;
-    float: left;
+    width: 100%;
+    left: 12px;
   }
-  
-  header .nav-bar ul li a {
-    font-size: 20px;
-    color: black;
-    padding: 20px;
-    display: block;
+  header .nav-bar ul li ul {
     position: relative;
-    padding: 3px;
-    margin: 5px;
+    width: 100%;
   }
-  
+  header .nav-bar ul li ul li {
+    background: #eee;
+  }
+  #menu-bar:checked ~ .nav-bar {
+    display: initial;
+  }
   .logo_web {
-    width: 150px;
-    height: auto;
+    display: none;
   }
-  
-  header .nav-bar ul li::after {
-    content: "";
-    height: 2px;
-    width: 0;
-    background: black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
-  
   header .nav-bar ul li:hover::after {
     width: 100%;
     transition: 0.5s ease-out;
   }
-  
-  header .nav-bar ul li ul {
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background: #fff;
-    display: none;
-  }
-  
-  header .nav-bar ul li ul li {
-    width: 100%;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  
-  header .nav-bar ul li:focus-within > ul,
-  header .nav-bar ul li:hover > ul {
-    display: initial;
-  }
-  
-  #menu-bar {
-    display: none;
-  }
-  
-  header label {
-    font-size: 20px;
-    color: black;
-    cursor: pointer;
-    display: none;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    header {
-      padding: 20px;
-    }
-    header label {
-      display: initial;
-    }
-    header .nav-bar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background: #fff;
-      border-top: 1px solid rgba(0, 0, 0, 0.1);
-      display: none;
-    }
-  
-    header .nav-bar ul li {
-      width: 100%;
-      left: 12px;
-    }
-    header .nav-bar ul li ul {
-      position: relative;
-      width: 100%;
-    }
-    header .nav-bar ul li ul li {
-      background: #eee;
-    }
-    #menu-bar:checked ~ .nav-bar {
-      display: initial;
-    }
-    .logo_web {
-      display: none;
-    }
-    header .nav-bar ul li:hover::after {
-      width: 100%;
-      transition: 0.5s ease-out;
-    }
-    
-  }
-
+}
 
 .gallery-container {
   display: grid;
@@ -147,10 +144,9 @@
   height: 60%;
   margin-top: 8.5%;
   margin-left: 10%;
-  border: 20px solid rgba(255, 255, 255, .4);
+  border: 20px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  background-color:#F6E1C3;
- 
+  background-color: #f6e1c3;
 }
 
 .gallery_-img {
