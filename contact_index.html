@@ -1,65 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Montserrat:ital,wght@1,500&family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine&family=Montserrat:ital,wght@1,500&family=Roboto:ital@1&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="./src/css/contact_style.css">
+    <link rel="stylesheet" href="./src/css/contact_style.css" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img class= "logo_web" src="./src/imgs/LogoSample_ByTailorBrands.jpg" alt="logo" />
-        <input type="checkbox" name="" id="menu-bar" />
-        <label for="menu-bar">Menu</label>
-        <nav class="nav-bar">
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li>
-              <a href="#">Gallery +</a>
-              <ul>
-                <li><a href="./people_Gallery_index.html">People</a></li>
-                <li><a href="./berlin_Gallery_index.html">Berlin</a></li>
-                <li><a href="./ecuador_Gallery_index.html">Ecuador</a></li>
-              </ul>
-            </li>
-            <li><a href="./about_index.html">About me</a></li>
-            <li><a href="./contact_index.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      <img
+        class="logo_web"
+        src="./src/imgs/LogoSample_ByTailorBrands.jpg"
+        alt="logo"
+      />
+      <input type="checkbox" name="" id="menu-bar" />
+      <label for="menu-bar">Menu</label>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="#">Gallery +</a>
+            <ul>
+              <li><a href="./people_Gallery_index.html">People</a></li>
+              <li><a href="./berlin_Gallery_index.html">Berlin</a></li>
+              <li><a href="./ecuador_Gallery_index.html">Ecuador</a></li>
+            </ul>
+          </li>
+          <li><a href="./about_index.html">About me</a></li>
+          <li><a href="./contact_index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <section id="formular_contact">
-        <img class="Profile-bild"  src="./src/imgs/background.jpeg" alt="Bild_Fredy_Kamera">
+        <img
+          class="Profile-bild"
+          src="./src/imgs/background.jpeg"
+          alt="Bild_Fredy_Kamera"
+        />
         <div class="Contact_me-container">
-            <h2>Contact me</h2>
-            <form action="#" method="POST">
-              <label for="nombre">Name:</label>
-              <input type="text" id="nombre" name="nombre" required  placeholder="Please write your name...">
-            
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required 
-              placeholder="Please write your e-mail...">
-            
-              <label for="asunto">Telephone:</label>
-              <input type="number" id="telefon" name="telefon" required placeholder="Please write your telephone"
-              >
-            
-              <label for="mensaje">Message:</label>
-              <textarea id="mensaje" name="mensaje" required rows="4" cols="50" minlength="3"
-              maxlength="50" placeholder="Please send me a message"></textarea>
-            
-              <button type="submit">Send</button>
-              <p>Fredy Montalvo</p>
-              <p>Berlin-Germany</p>
-              
-            </form>
-        </div>
+          <h2>Contact me</h2>
+          <form action="#" method="POST">
+            <label for="nombre">Name:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              placeholder="Please write your name..."
+            />
 
-    </section>
-        
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Please write your e-mail..."
+            />
+
+            <label for="asunto">Telephone:</label>
+            <input
+              type="number"
+              id="telefon"
+              name="telefon"
+              required
+              placeholder="Please write your telephone"
+            />
+
+            <label for="mensaje">Message:</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              required
+              rows="4"
+              cols="50"
+              minlength="3"
+              maxlength="50"
+              placeholder="Please send me a message"
+            ></textarea>
+
+            <button type="submit">Send</button>
+            <p>Fredy Montalvo</p>
+            <p>Berlin-Germany</p>
+          </form>
+        </div>
       </section>
-</body>
+    </main>
+  </body>
 </html>
