@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  background-color: #f6e1c3;
+  background-color: whitesmoke;
 }
 
 header {
@@ -141,13 +141,14 @@ header label {
   margin-top: 10.6em;
   border-radius: 20px;
   padding: 1em;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color:#F6E1C3;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .Contact_me-container h2 {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
+  
 }
 
 .Profile-bild {
@@ -157,6 +158,7 @@ header label {
   border-radius: 0.9rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   filter: brightness(90%);
+  
 }
 
 @media screen and (max-width: 768px) {

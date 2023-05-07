@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
 }
 
 header {
@@ -134,57 +134,36 @@ header label {
     transition: 0.5s ease-out;
   }
 }
-
-#about_me {
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
-}
-
-.about_me-container {
-  width: 600px;
-  height: 600px;
-  margin-top: 12em;
-  border-radius: 20px;
-  padding: 1em;
-  background-color: #f6e1c3;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.about_me-container h2 {
-  font-size: 40px;
-  font-family: "Montserrat", sans-serif;
-}
-.about_me-container p {
-  text-align: justify;
-  line-height: 155%;
-  font-family: "Roboto", sans-serif;
-}
-
-.Profile-bild {
-  height: 600px;
-  margin-top: 10%;
-  margin-left: 2%;
-  border-radius: 0.9rem;
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-columns: 100px;
+  padding: 5px;
+  grid-gap: 10px;
+  width: 80%;
+  height: 60%;
+  margin-top: 8.5%;
+  margin-left: 10%;
   border: 20px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #f6e1c3;
 }
 
-@media screen and (max-width: 768px) {
-  .Profile-bild {
-    position: relative;
-    top: 200px;
-    width: 400px;
-    height: auto;
-  }
+.gallery_-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-  .about_me-container {
-    width: 400px;
-    height: auto;
-    position: relative;
-    margin-top: 150px;
-  }
+.gallery__item:nth-child(1) {
+  grid-row-start: span 2;
+}
+
+.gallery__item:nth-child(2) {
+  grid-column-start: span 2;
+}
+
+.gallery__item:nth-child(9) {
+  grid-column-start: span 2;
 }

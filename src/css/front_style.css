@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  background-color: #f6e1c3;
+  background-color: whitesmoke;
 }
 
 header {
@@ -157,7 +157,7 @@ footer {
   margin: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   bottom: 0;
   width: 90%;
 }
@@ -185,7 +185,6 @@ p {
   cursor: pointer;
   transition: 0.3s linear;
   filter: brightness(90%);
-
 }
 
 .share-buttom:hover {
@@ -236,17 +235,18 @@ p {
 .share-buttom a:nth-of-type(4) {
   transition-delay: 0.4s;
 }
+
+h1 {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Pacifico", cursive;
+  color: rgb(164, 106, 229);
+}
+
 @media screen and (max-width: 768px) {
   footer {
     position: absolute;
     bottom: 0;
     width: 80%;
   }
-}
-
-h1 {
-  margin-left: 42%;
-  font-size: 18px;
-  font-family: 'Pacifico', cursive;
-color:rgb(164, 106, 229); ;
 }
