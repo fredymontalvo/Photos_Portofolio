@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  background-color:whitesmoke;
+  background-color:rgb(238, 236, 236);
 }
 
 header {
@@ -151,13 +151,14 @@ header label {
   margin-top: 12em;
   border-radius: 20px;
   padding: 1em;
-  background-color: #f6e1c3;
+  background-color: rgb(240, 239, 239);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .about_me-container h2 {
   font-size: 40px;
   font-family: "Montserrat", sans-serif;
+  padding: 3px;
 }
 .about_me-container p {
   text-align: justify;

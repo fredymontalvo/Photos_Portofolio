@@ -8,7 +8,7 @@
 
 body {
   width: 100vw;
-  background-color: whitesmoke;
+  background-color:rgb(238, 236, 236);
 }
 
 header {
@@ -141,7 +141,8 @@ header label {
   margin-top: 10.6em;
   border-radius: 20px;
   padding: 1em;
-  background-color: #f6e1c3;
+  background-color: whitesmoke;
+  border: 10px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -203,11 +204,12 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 3px;
   font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
 }
 
 button[type="submit"] {
-  background-color: #e9a178;
-  color: black;
+  background-color: #d8cfc9;
+  color: rgb(26, 24, 24);
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
@@ -218,13 +220,19 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #a84448;
+  background-color: #a38788;
+  color: white;
 }
 
 p {
   margin-left: 70%;
+
   font-size: 14px;
   font-weight: 100;
   text-align: end;
   font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  padding: 3px;
 }

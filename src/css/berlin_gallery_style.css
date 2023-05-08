@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color:rgb(238, 236, 236);
     font-size: 16px;
 }
 
@@ -146,7 +146,7 @@ header label {
   margin-left: 10%;
   border: 20px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  background-color: #f6e1c3;
+  background-color:whitesmoke;
 }
 
 .gallery_-img {
