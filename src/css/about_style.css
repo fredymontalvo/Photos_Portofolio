@@ -8,7 +8,8 @@
 
 body {
   width: 100vw;
-  background-color: rgb(238, 236, 236);
+ background-image: url("../backgrounds/backGroundAbout.png");
+ background-position: top;
 }
 
 header {

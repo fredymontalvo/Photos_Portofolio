@@ -8,7 +8,11 @@
 
 body {
   width: 100vw;
-  background-color:rgb(238, 236, 236);
+  background-image: url(../backgrounds/backGroundContact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -95,50 +99,17 @@ header label {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 20px;
-  }
-  header label {
-    display: initial;
-  }
-  header .nav-bar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    display: none;
-  }
+/* Contact me */
 
-  header .nav-bar ul li {
-    width: 100%;
-    left: 12px;
-  }
-  header .nav-bar ul li ul {
-    position: relative;
-    width: 100%;
-  }
-  header .nav-bar ul li ul li {
-    background: #eee;
-  }
-  #menu-bar:checked ~ .nav-bar {
-    display: initial;
-  }
-  .logo_web {
-    display: none;
-  }
-  header .nav-bar ul li:hover::after {
-    width: 100%;
-    transition: 0.5s ease-out;
-  }
+.main-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 200px;
 }
 
 .Contact_me-container {
-  width: 500px;
   height: 500px;
-  margin-top: 10.6em;
   border-radius: 20px;
   padding: 1em;
   background-color: whitesmoke;
@@ -153,36 +124,10 @@ header label {
 
 .Profile-bild {
   height: 500px;
-  margin-top: 10%;
   margin-left: 2%;
   border-radius: 0.9rem;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   filter: brightness(90%);
-}
-
-@media screen and (max-width: 768px) {
-  .Profile-bild {
-    position: relative;
-    top: 200px;
-    width: 400px;
-    height: auto;
-  }
-
-  .Contact_me-container {
-    width: 400px;
-    height: auto;
-    position: relative;
-    margin-top: 150px;
-  }
-}
-
-#formular_contact {
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  flex-wrap: wrap;
 }
 
 form {
@@ -235,4 +180,67 @@ p {
 
 h2 {
   padding: 3px;
+}
+
+.buttonInfo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+  header label {
+    display: initial;
+  }
+  header .nav-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  header .nav-bar ul li {
+    width: 100%;
+    left: 12px;
+  }
+  header .nav-bar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .nav-bar ul li ul li {
+    background: #eee;
+  }
+  #menu-bar:checked ~ .nav-bar {
+    display: initial;
+  }
+  .logo_web {
+    display: none;
+  }
+  header .nav-bar ul li:hover::after {
+    width: 100%;
+    transition: 0.5s ease-out;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Profile-bild {
+    position: relative;
+    top: 200px;
+    width: 400px;
+    height: auto;
+  }
+
+  .Contact_me-container {
+    width: 400px;
+    height: auto;
+    position: relative;
+    margin-top: 150px;
+  }
 }
