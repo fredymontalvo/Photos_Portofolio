@@ -8,8 +8,10 @@
 
 body {
   width: 100vw;
- background-image: url("../backgrounds/backGroundAbout.png");
- background-position: top;
+  background-image: url("../backgrounds/backGroundAbout.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 header {
@@ -110,7 +112,6 @@ header label {
   .info {
     width: 30%;
     height: auto;
-
   }
   .title {
     font-size: 2rem;
@@ -126,10 +127,9 @@ header label {
     border: 1rem solid white;
     filter: sepia(30%);
   }
-  p{
+  p {
     font-size: 1.2rem;
     line-height: 1.5rem;
-  
   }
 }
 

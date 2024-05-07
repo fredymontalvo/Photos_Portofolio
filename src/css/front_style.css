@@ -8,8 +8,8 @@
 
 body {
   width: 100vw;
-  /* background-color: rgb(238, 236, 236); */
   background-image: url(../backgrounds/backgroundMain.png);
+  background-repeat: no-repeat;
 }
 
 header {
