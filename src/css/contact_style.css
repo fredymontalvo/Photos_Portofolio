@@ -188,6 +188,10 @@ h2 {
   align-items: center;
 }
 
+textarea {
+  resize: none;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
   header {
