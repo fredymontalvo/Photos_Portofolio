@@ -136,6 +136,7 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
+/* Button  */
 .share-buttom {
   width: 190px;
   height: 60px;
@@ -208,14 +209,11 @@ h1 {
 }
 
 /* media queries  */
-
 @media only screen and (max-width: 920px) {
-  header {
-    padding: 20px;
-  }
   header label {
     display: initial;
   }
+
   header .nav-bar {
     position: absolute;
     top: 100%;
@@ -227,48 +225,64 @@ h1 {
     height: 100vh;
   }
 
+  header .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   header .nav-bar ul li {
     width: 100%;
-    left: 12px;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
   }
+
+  header .nav-bar ul li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
   header .nav-bar ul li ul {
     position: relative;
     width: 100%;
   }
+
   header .nav-bar ul li ul li {
     background: #eee;
   }
+
   #menu-bar:checked ~ .nav-bar {
     display: initial;
   }
-  .logo_web {
-    display: none;
-  }
+
   header .nav-bar ul li:hover::after {
     width: 100%;
-    transition: 0.5s ease-out;
+    transition: none;
+    background: none;
+  }
+
+  .logo_web {
+    width: 100px;
+  }
+  .footer-container {
+    gap: 3rem;
+    flex-direction: column;
+    margin-right: 10%;
   }
   .background_foto {
-    width: 100%; /* Ocupa el 80% del ancho del contenedor */
-    max-width: 100%; /* No supera el 100% del ancho del contenedor */
-    display: block; /* Asegura que la imagen se comporte como un bloque */
-    margin: 0 auto; /* Centra horizontalmente */
-    border-radius: 1.2em;
-    filter: brightness(90%);
+    width: 300px;
+    height: 250px;
+    margin-left: 10%;
   }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  body {
+    width: 100vw;
+    background-image: url(../backgrounds/backgroundMain.png);
+    background-position: center left;
   }
-
-  .share-buttom {
-    order: 2; /* Cambia el orden para que aparezca debajo del h1 */
-  }
-
-  title-container {
-    order: 1; /* Cambia el orden para que aparezca encima de .share-buttom */
+  h1 {
+    font-size: 1.4rem;
   }
 }
