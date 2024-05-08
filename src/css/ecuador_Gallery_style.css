@@ -165,7 +165,7 @@ header label {
 
 .icon {
   position: absolute;
-  background-color: var(--color-closeButton);
+  color: #ee4266;
   border-radius: 30px;
   top: 20%;
   right: 250px;
