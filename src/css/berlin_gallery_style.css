@@ -103,8 +103,7 @@ header label {
   grid-gap: 10px;
   width: 80%;
   height: 60%;
-  margin-top: 8.5%;
-  margin-left: 10%;
+  margin: 0 auto;
   border: 20px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   background-color: whitesmoke;
