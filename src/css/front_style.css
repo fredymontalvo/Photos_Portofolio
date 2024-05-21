@@ -209,7 +209,7 @@ h1 {
 }
 
 /* media queries  */
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 768px) {
   header label {
     display: initial;
   }
@@ -284,5 +284,68 @@ h1 {
   }
   h1 {
     font-size: 1.4rem;
+  }
+  .share-buttom {
+    width: 190px;
+    height: 60px;
+    background-color: #a29c9c;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s linear;
+    filter: brightness(90%);
+  }
+
+  .share-buttom:hover {
+    transform: scale(1.1);
+  }
+
+  .share-buttom span {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background: #db7b7b;
+    color: black;
+    text-align: center;
+    line-height: 80px;
+    z-index: 999;
+    transition: 0.6s linear;
+    border-radius: 40px;
+  }
+
+  .share-buttom:hover span {
+    transform: translateX(-100%);
+    transition-delay: 0.2s;
+  }
+
+  .share-buttom a {
+    flex: 1;
+    font-size: 26px;
+    color: #2d3436;
+    text-align: center;
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+
+  .share-buttom:hover a {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .share-buttom a:nth-of-type(1) {
+    transition-delay: 1s;
+  }
+  .share-buttom a:nth-of-type(2) {
+    transition-delay: 0.8s;
+  }
+  .share-buttom a:nth-of-type(3) {
+    transition-delay: 0.6s;
+  }
+  .share-buttom a:nth-of-type(4) {
+    transition-delay: 0.4s;
   }
 }
