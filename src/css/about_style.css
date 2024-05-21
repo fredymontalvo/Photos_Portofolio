@@ -134,13 +134,11 @@ header label {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
-  header {
-    padding: 20px;
-  }
+@media only screen and (max-width: 920px) {
   header label {
     display: initial;
   }
+
   header .nav-bar {
     position: absolute;
     top: 100%;
@@ -149,43 +147,64 @@ header label {
     background: #fff;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     display: none;
+    height: 100vh;
+  }
+
+  header .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   header .nav-bar ul li {
     width: 100%;
-    left: 12px;
+    display: block;
+    margin: 10px 0;
+    text-align: center;
   }
+
+  header .nav-bar ul li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+  }
+
   header .nav-bar ul li ul {
     position: relative;
     width: 100%;
   }
+
   header .nav-bar ul li ul li {
     background: #eee;
   }
+
   #menu-bar:checked ~ .nav-bar {
     display: initial;
   }
-  .logo_web {
-    display: none;
-  }
+
   header .nav-bar ul li:hover::after {
     width: 100%;
-    transition: 0.5s ease-out;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .Profile-bild {
-    position: relative;
-    top: 200px;
-    width: 400px;
-    height: auto;
+    transition: none;
+    background: none;
   }
 
+  .logo_web {
+    width: 100px;
+  }
+
+  body {
+    margin-top: 110px;
+  }
   .about_me-container {
-    width: 400px;
-    height: auto;
-    position: relative;
-    margin-top: 150px;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 20px;
+    .info {
+      width: 100%;
+    }
+    .Profile-bild {
+      width: 100%;
+    }
   }
 }
