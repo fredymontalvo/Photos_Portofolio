@@ -193,7 +193,7 @@ textarea {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   header label {
     display: initial;
   }
@@ -255,15 +255,26 @@ textarea {
   body {
     margin-top: 110px;
   }
+  .main-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 20px;
+  }
+  .Profile-bild {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .about_me-container {
     flex-direction: column;
     gap: 1rem;
     margin: 20px;
-    .info {
-      width: 100%;
-    }
-    .Profile-bild {
-      width: 100%;
-    }
+  }
+  .info {
+    width: 100%;
+  }
+  .Profile-bild {
+    width: 100%;
   }
 }

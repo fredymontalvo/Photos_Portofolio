@@ -23,7 +23,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 1000;
   font-family: "Domine", serif;
 }
 
@@ -180,6 +179,7 @@ header label {
 .show {
   transform: translate(0);
 }
+
 /* Media Queries */
 @media only screen and (max-width: 768px) {
   header label {
@@ -256,7 +256,7 @@ header label {
 
   .icon {
     position: absolute;
-    top: 650px;
+    top: 680px;
     right: 10px;
     font-size: 40px;
     cursor: pointer;
